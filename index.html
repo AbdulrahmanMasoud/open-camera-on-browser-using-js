@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Camera in Browser</title>
+    <style>
+        #video{
+            width: 60%;
+            height: 500px;
+            transform: translate(32%, 20px);
+            border: 2px solid #000;
+            object-fit: cover;
+        }
+        #err{
+            width: 60%;
+            height: 100px;
+            transform: translate(32%, 20px);
+            border: 2px solid red;
+        }
+        #canv{
+            width: 40%;
+            height: 500px;
+            transform: translate(70%, 20px);
+            border: 2px solid greenyellow;
+        }
+        button{ float: right;}
+    </style>
+</head>
+<body>
+<video id="video" src=""></video> <!--This for load Video-->
+<button onclick="video()" id="">Start</button> <!--This for Start Video-->
+<canvas id='canv'></canvas> <!--This for Drawing Photo-->
+<button onclick="takePhoto()" id="take">Take Photo</button> <!--This for Take a Photo-->
+<div id="err"></div><!--This Show Errors-->
+
+    <script src="./main.js" ></script>
+</body>
+</html>
